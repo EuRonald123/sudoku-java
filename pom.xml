@@ -1,0 +1,26 @@
+<project xmlns="http://apache.org" xmlns:xsi="http://w3.org"
+  xsi:schemaLocation="http://apache.org http://apache.org">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.sudoku</groupId>
+  <artifactId>projeto-sudoku</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>projeto-sudoku</name>
+  <url>http://apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
