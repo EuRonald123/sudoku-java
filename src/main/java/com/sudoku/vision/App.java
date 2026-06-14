@@ -1,4 +1,4 @@
-package com.sudoku.visao;
+package com.sudoku.vision;
 
 public class App 
 {
