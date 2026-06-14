@@ -21,19 +21,15 @@ public class MenuTerminal {
     public void start(){
         int option = 0;
 
-        System.out.println("*** Game sudoKU ***");
+        System.out.println("\n*** Game sudoKU ***");
 
-        while (true) {
+        while (option != 8) {
             viewOptions();
-            option = scanner.nextInt();
-            if(option == 7){
-                if(tryToFinish()){
-                    break;
-                }
+            option = readNumber("\nChoose an option:", 1, 8);
+            if(option == 7 && tryToFinish()){
+                break;
             }
-            else{
-                processOption(option);
-            }
+            processOption(option);
         }
     }
 
@@ -45,6 +41,7 @@ public class MenuTerminal {
         System.out.println("\n5: Check game status");
         System.out.println("\n6: Clean Board");
         System.out.println("\n7: Finish the game");
+        System.out.println("\n8: Exit");
     }
 
     private void processOption(int option){
@@ -78,14 +75,10 @@ public class MenuTerminal {
         int number;
         int line;
         int column;
-        System.out.println("\nEnter the number to be entered");
-        number = scanner.nextInt();
-        
-        System.out.println("\nEnter the line (0 to 8)");
-        line = scanner.nextInt();
-        
-        System.out.println("\nEnter the column (0 to 8)");
-        column = scanner.nextInt();
+
+        number = readNumber("\nEnter the number to be entered", 1, 9);
+        line = readNumber("\nEnter the line (0 to 8)", 0, 8);
+        column = readNumber("\nEnter column line (0 to 8)", 0, 8);
 
         boolean success = board.addNumber(line, column, number);
         if (success) {
@@ -99,11 +92,8 @@ public class MenuTerminal {
         int line;
         int column;
         
-        System.out.println("\nEnter the line (0 to 8)");
-        line = scanner.nextInt();
-        
-        System.out.println("\nEnter the column (0 to 8)");
-        column = scanner.nextInt();
+        line = readNumber("\nEnter the line (0 to 8)", 0, 8);
+        column = readNumber("\nEnter column line (0 to 8)", 0, 8);
 
         boolean success = board.removeNumber(line, column);
         if(success){
@@ -166,5 +156,24 @@ public class MenuTerminal {
         return false;
     }
 
-
+    private int readNumber(String message, int min, int max) {
+        int input;
+        while (true) {
+            System.out.println(message);
+            
+            if (scanner.hasNextInt()) {
+                input = scanner.nextInt();
+                
+                if (input >= min && input <= max) {
+                    return input;
+                }
+                
+                System.out.println("Invalid number! Please enter a value between " + min + " and " + max + ".");
+            } else {
+                // se nao for numero:
+                System.out.println("Invalid input! Please enter numbers only.");
+                scanner.next();
+            }
+        }
+    }
 }
