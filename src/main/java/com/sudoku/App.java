@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         
         if (args.length != 81) {
-            System.out.println("Erro: O jogo precisa de exatamente 81 argumentos para iniciar.");
+            System.out.println("Error: The game needs exactly 81 arguments to start.");
             return; 
         }
 

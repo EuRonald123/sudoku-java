@@ -1,1 +1,6 @@
 /mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/App.java
+/mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/control/GameController.java
+/mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/model/Board.java
+/mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/model/Space.java
+/mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/util/GameStatus.java
+/mnt/Bau/Estudo/Programacao/boot_camp_DIO/projeto-sudoku/src/main/java/com/sudoku/view/MenuTerminal.java

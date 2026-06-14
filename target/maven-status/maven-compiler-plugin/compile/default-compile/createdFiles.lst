@@ -1,1 +1,6 @@
+com/sudoku/view/MenuTerminal.class
 com/sudoku/App.class
+com/sudoku/model/Space.class
+com/sudoku/util/GameStatus.class
+com/sudoku/control/GameController.class
+com/sudoku/model/Board.class
