@@ -21,7 +21,7 @@ public class MenuTerminal {
     public void start(){
         int option = 0;
 
-        System.out.println("\n*** Game sudoKU ***");
+        System.out.println("\n*** Game sudoku ***");
 
         while (option != 8) {
             viewOptions();

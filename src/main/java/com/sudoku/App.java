@@ -23,14 +23,14 @@ public class App {
             String[] dados = partes[1].split(",");       
 
             //converte
-            int coluna = Integer.parseInt(coordenadas[0]); 
-            int linha = Integer.parseInt(coordenadas[1]);  
+            int column = Integer.parseInt(coordenadas[0]);
+            int line = Integer.parseInt(coordenadas[1]);
             
             //gabarito
             int expectedValue = Integer.parseInt(dados[0]); 
             boolean fixo = Boolean.parseBoolean(dados[1]);
 
-            grid[linha][coluna] = new Space(expectedValue, fixo);
+            grid[line][column] = new Space(expectedValue, fixo);
         }
 
         Board board = new Board(grid);
