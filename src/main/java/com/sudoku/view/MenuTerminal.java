@@ -78,7 +78,7 @@ public class MenuTerminal {
 
         number = readNumber("\nEnter the number to be entered", 1, 9);
         line = readNumber("\nEnter the line (0 to 8)", 0, 8);
-        column = readNumber("\nEnter column line (0 to 8)", 0, 8);
+        column = readNumber("\nEnter column (0 to 8)", 0, 8);
 
         boolean success = board.addNumber(line, column, number);
         if (success) {
