@@ -15,6 +15,9 @@ public class WindowSudokuUI extends JFrame {
 
         setResizable(false);
 
+        //Panel
+        add(new PanelSudokuUI(9));
+
         setVisible(true);
     }
 }
