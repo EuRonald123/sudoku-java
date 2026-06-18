@@ -32,6 +32,11 @@ com.sudoku
     └── MenuTerminal.java        # Interface via terminal
 ```
 
+## Imagem do Tabuleiro nível Fácil
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e413478f-151b-4689-805d-63a3dbb080ab" />
+
+
 ## Como Executar
 
 ### Interface Gráfica (Swing)
