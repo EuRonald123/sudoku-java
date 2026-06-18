@@ -3,7 +3,10 @@ package com.sudoku;
 import com.sudoku.control.GameController;
 import com.sudoku.model.Board;
 import com.sudoku.model.Space;
-import com.sudoku.view.MenuTerminal;
+//import com.sudoku.view.MenuTerminal;
+import com.sudoku.view.WindowSudokuUI;
+
+import javax.swing.*;
 
 public class App {
 
@@ -35,8 +38,8 @@ public class App {
 
         Board board = new Board(grid);
         GameController controller = new GameController(board);
-        MenuTerminal menu = new MenuTerminal(board, controller);
-
-        menu.start();
+        SwingUtilities.invokeLater(() -> new WindowSudokuUI(800, 800, board, controller));
+        // MenuTerminal menu = new MenuTerminal(board, controller);
+        // menu.start();
     }
 }
