@@ -5,7 +5,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 
 import com.sudoku.model.Board;
 import com.sudoku.model.Space;
@@ -97,7 +96,7 @@ public class PanelSudokuUI extends JPanel {
             }
         }
 
-        Timer timer = new Timer(3000, e -> resetFieldColors());
+        Timer timer = new Timer(2000, e -> resetFieldColors());
         timer.setRepeats(false);
         timer.start();
     }
